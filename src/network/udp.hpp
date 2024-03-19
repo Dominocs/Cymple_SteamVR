@@ -3,7 +3,7 @@
 #include <WinSock2.h>
 #include "../driverlog.h"
 #pragma comment (lib, "ws2_32.lib")  //╪сть ws2_32.dll
-class CUdp
+class UdpSocketClass
 {
 public:
 	static inline SOCKET createUdp() {

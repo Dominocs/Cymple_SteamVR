@@ -5,11 +5,8 @@
 #include <thread>
 #include <shared_mutex>
 #include <WinSock2.h>
-#include "virtualhmd/hmd.h"
-#include "tracker.h"
-#include "trackerRoles.h"
 #define RX_BUFFER_LENGTH  4096
-class CProvider : public vr::IServerTrackedDeviceProvider
+class ProviderClass : public vr::IServerTrackedDeviceProvider
 {
 public:
 	virtual vr::EVRInitError Init(vr::IVRDriverContext* pDriverContext);
@@ -23,13 +20,10 @@ public:
 
 private:
 	SOCKET udpSocket;
-	std::thread* thUdpRW;
+	std::thread* threadUdpRW;
 	char aucRxBuffer[RX_BUFFER_LENGTH];
 	std::shared_mutex mutexUdpRW;
-	int readsize = 0;
-	CTracker* apstValidTracker[ROLE_MAX];
-	std::vector<CTracker*>v_invalidTracker;
-	void udpRW();
+	void udpReadAndWrite();
 };
 
 #endif

@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>driver_sample</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>CympleTag_SteamVR_Driver</ProjectName>
+    <ProjectName>Cymple_SteamVR</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,8 +74,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\output\cympleTag_debug\bin\win64\</OutDir>
-    <TargetName>driver_cympleTag_debug</TargetName>
+    <OutDir>E:\steam\steamapps\common\SteamVR\drivers\cymple_debug\bin\win64\</OutDir>
+    <TargetName>driver_cymple_debug</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -83,8 +83,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\output\cympleTag_release\bin\win64\</OutDir>
-    <TargetName>driver_cympleTag_release</TargetName>
+    <OutDir>..\output\cymple_release\bin\win64\</OutDir>
+    <TargetName>driver_cymple_release</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -161,25 +161,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="basics.cpp" />
+    <ClCompile Include="basic.cpp" />
     <ClCompile Include="provider.cpp" />
-    <ClCompile Include="tracker.cpp" />
     <ClCompile Include="driverlog.cpp" />
     <ClCompile Include="DriverFactory.cpp" />
-    <ClCompile Include="virtualhmd\hmd.cpp" />
+    <ClCompile Include="virtualDevice\hmd.cpp" />
     <ClCompile Include="network\udp.hpp" />
+    <ClCompile Include="virtualTracker.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="basics.h" />
-    <ClInclude Include="driverProto.hpp" />
+    <ClInclude Include="basic.h" />
+    <ClInclude Include="networkDef.h" />
     <ClInclude Include="provider.h" />
-    <ClInclude Include="tracker.h" />
     <ClInclude Include="driverlog.h" />
-    <ClInclude Include="DriverFactory.h" />
-    <ClInclude Include="virtualhmd\hmd.h" />
+    <ClInclude Include="virtualDevice\hmd.h" />
     <ClInclude Include="network\socket.hpp" />
-    <ClInclude Include="hmdpose.hpp" />
-    <ClInclude Include="trackerRoles.h" />
+    <ClInclude Include="virtualTracker.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="default.vrsettings" />

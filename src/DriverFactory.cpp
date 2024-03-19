@@ -21,7 +21,7 @@ using namespace vr;
 #error "Unsupported Platform."
 #endif
 
-static CProvider g_provider;
+ProviderClass g_provider;
 
 //==================================================================
 //函 数 名：HmdDriverFactory
@@ -53,7 +53,7 @@ HMD_DLL_EXPORT void *HmdDriverFactory(const char *pInterfaceName, int *pReturnCo
 //日    期：2022/06/21
 //修改记录：
 //==================================================================
-CProvider* GetDriverProvider()
+ProviderClass* GetDriverProvider()
 {
     return &g_provider;
 }
