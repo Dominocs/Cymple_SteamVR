@@ -208,7 +208,20 @@ vr::DriverPose_t VirtualHmd::GetPose()
     pose.qDriverFromHeadRotation = HmdQuaternion_Init(1, 0, 0, 0);
 
     //Simple change yaw, pitch, roll with numpad keys
-
+    if ((GetAsyncKeyState('R') & 0x8000) != 0) {
+        roll = pitch = yaw = 0;
+        pX = pZ = 0;
+        pY = 1.55;
+    }
+    if ((GetAsyncKeyState('W') & 0x8000) != 0) {
+        pZ += -0.01;
+    }
+    if ((GetAsyncKeyState('E') & 0x8000) != 0) {
+        pY += 0.01;
+    }
+    if ((GetAsyncKeyState('Q') & 0x8000) != 0) {
+        pY += -0.01;
+    }
     if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0) {
         yaw += 0.01;
     }
@@ -222,22 +235,12 @@ vr::DriverPose_t VirtualHmd::GetPose()
     if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0) {
         pitch += -0.01;
     }
-    if ((GetAsyncKeyState('R') & 0x8000) != 0) {
-        roll = pitch = yaw = 0;
-        pX = pZ = 0;
-        pY = 1.55;
+    if ((GetAsyncKeyState('Z') & 0x8000) != 0) {
+        roll += 0.01;
     }
-
-    if ((GetAsyncKeyState('W') & 0x8000) != 0) {
-        pZ += -0.01;
+    if ((GetAsyncKeyState('X') & 0x8000) != 0) {
+        roll += -0.01;
     }
-    if ((GetAsyncKeyState('E') & 0x8000) != 0) {
-        pY += 0.01;
-    }
-    if ((GetAsyncKeyState('Q') & 0x8000) != 0) {
-        pY += -0.01;
-    }
-
     pose.vecPosition[0] = pX;
     pose.vecPosition[1] = pY;
     pose.vecPosition[2] = pZ;
@@ -255,16 +258,10 @@ vr::DriverPose_t VirtualHmd::GetPose()
     double x = t0 * t3 * t4 + t1 * t2 * t5;
     double y = t0 * t2 * t5 - t1 * t3 * t4;
     double z = t1 * t2 * t4 - t0 * t3 * t5;
-    double off_x = 0.2 * (2 * x * y - 2 * w * z) - 0.15 * (2 * x * z + 2 * w * y);
-    double off_y = 0.2 * (1 - 2 * x * x - 2 * z * z) - 0.15 * (2 * y * z - 2 * w * x);
-    double off_z = 0.2 * (2 * y * z + 2 * w * x) - 0.15 * (1 - 2 * x * x - 2 * y * y);
     pose.qRotation.w = w;
     pose.qRotation.x = x;
     pose.qRotation.y = y;
     pose.qRotation.z = z;
-    pose.vecPosition[0] += off_x;
-    pose.vecPosition[1] += off_y;
-    pose.vecPosition[2] += off_z;
     return pose;
 }
 

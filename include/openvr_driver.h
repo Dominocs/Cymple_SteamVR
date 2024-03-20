@@ -236,10 +236,8 @@ enum ETrackingResult
 
 	TrackingResult_Calibrating_InProgress	= 100,
 	TrackingResult_Calibrating_OutOfRange	= 101,
-
 	TrackingResult_Running_OK				= 200,
 	TrackingResult_Running_OutOfRange		= 201,
-
 	TrackingResult_Fallback_RotationOnly	= 300,
 };
 
@@ -665,7 +663,7 @@ enum EHmdTrackingStyle
 {
 	HmdTrackingStyle_Unknown				= 0,
 
-	HmdTrackingStyle_Lighthouse				= 1, // base stations and lasers
+	HmdTrackingStyle_Lighthouse				= 1, // base stations and lasersraw
 	HmdTrackingStyle_OutsideInCameras		= 2, // Cameras and LED, Rift 1 style
 	HmdTrackingStyle_InsideOutCameras		= 3, // Cameras on HMD looking at the world
 };

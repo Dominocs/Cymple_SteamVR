@@ -3,6 +3,20 @@
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------
+enum MyComponent
+{
+	MyComponent_a_touch,
+	MyComponent_a_click,
+
+	MyComponent_trigger_value,
+	MyComponent_trigger_click,
+
+	MyComponent_haptic,
+
+	MyComponent_MAX
+};
+
+
 class VirtualTracker : public vr::ITrackedDeviceServerDriver
 {
 public:
@@ -19,4 +33,6 @@ private:
 	vr::DriverPose_t pose = { 0 };/* track tag pose */
 	uint32_t itemId;
 	uint32_t controllerId;
+	vr::VRInputComponentHandle_t trigger_click_component_ = 0;
+	double yaw = 0, pitch = 0;
 };

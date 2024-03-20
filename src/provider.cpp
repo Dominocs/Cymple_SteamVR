@@ -33,15 +33,18 @@ EVRInitError ProviderClass::Init(IVRDriverContext* pDriverContext)
 #ifdef _DEBUG
     m_pNullHmdLatest = new VirtualHmd();
     vr::VRServerDriverHost()->TrackedDeviceAdded(m_pNullHmdLatest->GetSerialNumber().c_str(), vr::TrackedDeviceClass_HMD, m_pNullHmdLatest);
-    VirtualTracker* tmp = new VirtualTracker(4, vr::ETrackedControllerRole::TrackedControllerRole_RightHand);
+    VirtualTracker* tmp = new VirtualTracker(4, vr::ETrackedControllerRole::TrackedControllerRole_Stylus);
     vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker1", vr::TrackedDeviceClass_Controller, tmp);
     g_pVirtualTracker.push_back(tmp);
-    tmp = new VirtualTracker(5, vr::ETrackedControllerRole::TrackedControllerRole_LeftHand);
-    vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker2", vr::TrackedDeviceClass_Controller, tmp);
-    g_pVirtualTracker.push_back(tmp);
-    tmp = new VirtualTracker(6, vr::ETrackedControllerRole::TrackedControllerRole_Stylus);
-    vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker3", vr::TrackedDeviceClass_Controller, tmp);
-    g_pVirtualTracker.push_back(tmp);
+    //tmp = new VirtualTracker(5, vr::ETrackedControllerRole::TrackedControllerRole_OptOut);
+    //vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker2", vr::TrackedDeviceClass_Controller, tmp);
+    //g_pVirtualTracker.push_back(tmp);
+    //tmp = new VirtualTracker(5, vr::ETrackedControllerRole::TrackedControllerRole_LeftHand);
+    //vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker2", vr::TrackedDeviceClass_Controller, tmp);
+    //g_pVirtualTracker.push_back(tmp);
+    //tmp = new VirtualTracker(6, vr::ETrackedControllerRole::TrackedControllerRole_LeftHand);
+    //vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker3", vr::TrackedDeviceClass_Controller, tmp);
+    //g_pVirtualTracker.push_back(tmp);
 #endif
     
     udpSocket = UdpSocketClass::createUdp();

@@ -3,23 +3,38 @@
   "WorkspaceRootPath": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\provider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:provider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:virtualTracker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8bfbb9a6c3\\hmd_device_driver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:virtualTracker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\PROJECT_CYMPLE\\CYMPLE_STEAMVR\\INCLUDE\\OPENVR_DRIVER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\provider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:provider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualDevice\\hmd.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:virtualDevice\\hmd.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\DriverFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:DriverFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8bfbb9a6c3\\hmd_device_driver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualDevice\\hmd.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:virtualDevice\\hmd.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\basic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:basic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\driverlog.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -28,9 +43,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\driverlog.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:driverlog.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\PREVIEW\\VC\\TOOLS\\MSVC\\14.36.32532\\INCLUDE\\MEMORY||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5f621fbe3\\hmd_driver_factory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -42,24 +54,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c33b175265\\device_provider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\DriverFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:DriverFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:virtualTracker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\provider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:provider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\basic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:basic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\basic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|solutionrelative:basic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A47C788B-1BDA-4057-87A9-FC35ED711B44}|driver_sample.vcxproj|E:\\Project_Cymple\\Cymple_SteamVR\\src\\network\\udp.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -75,6 +75,9 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\ws2def.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.36.32532\\include\\memory||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -84,68 +87,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "memory",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.36.32532\\include\\memory",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.36.32532\\include\\memory",
-              "ViewState": "AQIAAGsNAAAAAAAAAAAAAIgNAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-03-18T22:57:11.293Z",
+              "DocumentIndex": 2,
+              "Title": "openvr_driver.h",
+              "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\include\\openvr_driver.h",
+              "RelativeDocumentMoniker": "..\\include\\openvr_driver.h",
+              "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\include\\openvr_driver.h",
+              "RelativeToolTip": "..\\include\\openvr_driver.h",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwCYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-19T09:02:38.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "hmd_driver_factory.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5f621fbe3\\hmd_driver_factory.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5f621fbe3\\hmd_driver_factory.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-18T22:53:42.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "device_provider.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5de219e14\\device_provider.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5de219e14\\device_provider.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-18T22:53:18.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "device_provider.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c33b175265\\device_provider.cpp",
               "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c33b175265\\device_provider.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-18T22:42:03.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T22:42:03.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "virtualTracker.cpp",
               "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.cpp",
               "RelativeDocumentMoniker": "virtualTracker.cpp",
               "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.cpp",
               "RelativeToolTip": "virtualTracker.cpp",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAABPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-18T13:18:38.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "hmd.h",
               "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualDevice\\hmd.h",
               "RelativeDocumentMoniker": "virtualDevice\\hmd.h",
@@ -158,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "driverlog.cpp",
               "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\driverlog.cpp",
               "RelativeDocumentMoniker": "driverlog.cpp",
@@ -166,12 +148,11 @@
               "RelativeToolTip": "driverlog.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-18T11:01:52.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T11:01:52.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "basic.cpp",
               "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\basic.cpp",
               "RelativeDocumentMoniker": "basic.cpp",
@@ -179,24 +160,12 @@
               "RelativeToolTip": "basic.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-18T04:23:11.3Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "provider.cpp",
-              "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\provider.cpp",
-              "RelativeDocumentMoniker": "provider.cpp",
-              "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\provider.cpp",
-              "RelativeToolTip": "provider.cpp",
-              "ViewState": "AQIAAAQAAAAAAAAAAAD4vyEAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2023-08-01T13:19:20.833Z",
+              "WhenOpened": "2024-03-18T04:23:11.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "driverlog.h",
               "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\driverlog.h",
               "RelativeDocumentMoniker": "driverlog.h",
@@ -204,25 +173,80 @@
               "RelativeToolTip": "driverlog.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2023-08-01T12:11:10.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2023-08-01T12:11:10.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "hmd.cpp",
               "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualDevice\\hmd.cpp",
               "RelativeDocumentMoniker": "virtualDevice\\hmd.cpp",
               "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualDevice\\hmd.cpp",
               "RelativeToolTip": "virtualDevice\\hmd.cpp",
-              "ViewState": "AQIAAK0AAAAAAAAAAAAAAOUAAAAAAAAA",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAAwAgBAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2023-08-01T13:13:13.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
+              "Title": "virtualTracker.h",
+              "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.h",
+              "RelativeDocumentMoniker": "virtualTracker.h",
+              "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.h",
+              "RelativeToolTip": "virtualTracker.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-18T13:17:40.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DriverFactory.cpp",
+              "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\DriverFactory.cpp",
+              "RelativeDocumentMoniker": "DriverFactory.cpp",
+              "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\DriverFactory.cpp",
+              "RelativeToolTip": "DriverFactory.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-08-01T13:19:10.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "device_provider.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5de219e14\\device_provider.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5de219e14\\device_provider.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-18T22:53:18.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "hmd_driver_factory.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5f621fbe3\\hmd_driver_factory.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8c5f621fbe3\\hmd_driver_factory.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-18T22:53:42.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "memory",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.36.32532\\include\\memory",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.36.32532\\include\\memory",
+              "ViewState": "AQIAAGsNAAAAAAAAAAAAAIgNAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-18T22:57:11.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "basic.h",
               "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\basic.h",
               "RelativeDocumentMoniker": "basic.h",
@@ -234,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "provider.h",
               "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\provider.h",
               "RelativeDocumentMoniker": "provider.h",
@@ -282,18 +306,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "virtualTracker.h",
-              "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.h",
-              "RelativeDocumentMoniker": "virtualTracker.h",
-              "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\virtualTracker.h",
-              "RelativeToolTip": "virtualTracker.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-18T13:17:40.285Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 19,
               "Title": "ws2def.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\ws2def.h",
@@ -301,35 +313,35 @@
               "ViewState": "AQIAANAAAAAAAAAAAAAMwO8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-03-18T13:24:18.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DriverFactory.cpp",
-              "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\DriverFactory.cpp",
-              "RelativeDocumentMoniker": "DriverFactory.cpp",
-              "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\DriverFactory.cpp",
-              "RelativeToolTip": "DriverFactory.cpp",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2023-08-01T13:19:10.212Z",
-              "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "hmd_device_driver.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8bfbb9a6c3\\hmd_device_driver.cpp",
               "ToolTip": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\BNZ.65f8bfbb9a6c3\\hmd_device_driver.cpp",
-              "ViewState": "AQIAABoBAAAAAAAAAAAAACcBAAAAAAAA",
+              "ViewState": "AQIAABoBAAAAAAAAAAAAADgBAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-18T22:27:07.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "provider.cpp",
+              "DocumentMoniker": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\provider.cpp",
+              "RelativeDocumentMoniker": "provider.cpp",
+              "ToolTip": "E:\\Project_Cymple\\Cymple_SteamVR\\src\\provider.cpp",
+              "RelativeToolTip": "provider.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-08-01T13:19:20.833Z",
               "EditorCaption": ""
             }
           ]
