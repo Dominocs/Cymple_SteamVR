@@ -43,17 +43,3 @@ HMD_DLL_EXPORT void *HmdDriverFactory(const char *pInterfaceName, int *pReturnCo
 
     return NULL;
 }
-
-//==================================================================
-//函 数 名：GetDriver
-//功能描述：获取全局驱动provider
-//输入参数：onst char *pInterfaceName, int *pReturnCode)
-//返 回 值：HMD_DLL_EXPORT
-//作    者：Dominocs
-//日    期：2022/06/21
-//修改记录：
-//==================================================================
-ProviderClass* GetDriverProvider()
-{
-    return &g_provider;
-}

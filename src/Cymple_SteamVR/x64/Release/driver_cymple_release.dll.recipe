@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\Project_Cymple\Cymple_SteamVR\output\cymple_release\bin\win64\driver_cymple_release.dll</FullPath>
+      <FullPath>E:\steam\steamapps\common\SteamVR\drivers\cymple_release\bin\win64\driver_cymple_release.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

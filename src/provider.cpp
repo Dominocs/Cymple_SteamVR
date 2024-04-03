@@ -7,15 +7,15 @@
 #include "network/socket.hpp"
 #include "network/udp.hpp"
 #ifdef _DEBUG
-#include "virtualDevice/hmd.h"
-#include "virtualTracker.h"
-#endif // DEBUG
-
-using namespace vr;
-static bool b_exit = false;
-
+#include "debugDevice/debugHmd.h"
+#include "debugDevice/debugController.h"
 VirtualHmd* m_pNullHmdLatest = NULL;
-std::vector<VirtualTracker*> g_pVirtualTracker;
+DebugControllerClass* pDebugController_L = NULL;
+DebugControllerClass* pDebugController_R = NULL;
+#endif // DEBUG
+#include "eyeTracker/eyeTracker.h"
+using namespace vr;
+
 //==================================================================
 //函 数 名：Init
 //功能描述：驱动初始化入口
@@ -29,24 +29,14 @@ EVRInitError ProviderClass::Init(IVRDriverContext* pDriverContext)
 {
     VR_INIT_SERVER_DRIVER_CONTEXT(pDriverContext);
     InitDriverLog(vr::VRDriverLog());
-    b_exit = false;
 #ifdef _DEBUG
     m_pNullHmdLatest = new VirtualHmd();
     vr::VRServerDriverHost()->TrackedDeviceAdded(m_pNullHmdLatest->GetSerialNumber().c_str(), vr::TrackedDeviceClass_HMD, m_pNullHmdLatest);
-    VirtualTracker* tmp = new VirtualTracker(4, vr::ETrackedControllerRole::TrackedControllerRole_Stylus);
-    vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker1", vr::TrackedDeviceClass_Controller, tmp);
-    g_pVirtualTracker.push_back(tmp);
-    //tmp = new VirtualTracker(5, vr::ETrackedControllerRole::TrackedControllerRole_OptOut);
-    //vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker2", vr::TrackedDeviceClass_Controller, tmp);
-    //g_pVirtualTracker.push_back(tmp);
-    //tmp = new VirtualTracker(5, vr::ETrackedControllerRole::TrackedControllerRole_LeftHand);
-    //vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker2", vr::TrackedDeviceClass_Controller, tmp);
-    //g_pVirtualTracker.push_back(tmp);
-    //tmp = new VirtualTracker(6, vr::ETrackedControllerRole::TrackedControllerRole_LeftHand);
-    //vr::VRServerDriverHost()->TrackedDeviceAdded("Test Tracker3", vr::TrackedDeviceClass_Controller, tmp);
-    //g_pVirtualTracker.push_back(tmp);
+    pDebugController_L = new DebugControllerClass(vr::ETrackedControllerRole::TrackedControllerRole_RightHand);
+    vr::VRServerDriverHost()->TrackedDeviceAdded("Debug Controller_R", vr::TrackedDeviceClass_Controller, pDebugController_L);
+    pDebugController_R = new DebugControllerClass(vr::ETrackedControllerRole::TrackedControllerRole_LeftHand);
+    vr::VRServerDriverHost()->TrackedDeviceAdded("Debug Controller_L", vr::TrackedDeviceClass_Controller, pDebugController_R);
 #endif
-    
     udpSocket = UdpSocketClass::createUdp();
     if (INVALID_SOCKET == udpSocket) {
         DriverLog("Failed to create udp socket!\n");
@@ -56,7 +46,7 @@ EVRInitError ProviderClass::Init(IVRDriverContext* pDriverContext)
         sockaddr_in serverAddr{};
         serverAddr.sin_family = PF_INET;  //IPV4
         serverAddr.sin_addr.s_addr = htonl(INADDR_ANY);  //addr
-        serverAddr.sin_port = htons(CYMPLE_STEAMVR_PORT);  //监听端口号
+        serverAddr.sin_port = htons(CYMPLE_OPENVR_PORT);  //监听端口号
         if (0 != CSocket::bind(udpSocket, &serverAddr)) {
             DriverLog("Failed to bind udp !\n");
             closesocket(udpSocket);
@@ -88,12 +78,21 @@ void ProviderClass::Cleanup()
         delete(m_pNullHmdLatest);
         m_pNullHmdLatest = nullptr;
     }
-    for (auto item : g_pVirtualTracker) {
-        delete item;
+    if (NULL != pDebugController_L) {
+        delete(pDebugController_L);
+        pDebugController_L = nullptr;
+    }
+    if (NULL != pDebugController_R) {
+        delete(pDebugController_R);
+        pDebugController_R = nullptr;
     }
 #endif
+    b_exit = true;
+    if (NULL != pEyeTracker) {
+        delete(pEyeTracker);
+        pEyeTracker = nullptr;
+    }
     if (NULL != threadUdpRW) {
-        b_exit = true;
         threadUdpRW->join();
         threadUdpRW = NULL;
     }
@@ -109,13 +108,44 @@ void ProviderClass::RunFrame()
     {
         m_pNullHmdLatest->RunFrame();
     }
-    for (auto item : g_pVirtualTracker) {
-        item->updatePose();
+    if (NULL != pDebugController_L) {
+        pDebugController_L->RunFrame();
+    }
+    if (NULL != pDebugController_R) {
+        pDebugController_R->RunFrame();
     }
 #endif
     TLV_S* pstHdr;
-    mutexUdpRW.lock_shared();
-    mutexUdpRW.unlock_shared();
+    char* pData = aucRxBuffer;
+    if (dataLength >= sizeof(TLV_S)){
+        mutexUdpRW.lock_shared();
+        while (dataLength >= sizeof(TLV_S)) {
+            pstHdr = (TLV_S*)pData;
+            int tmp = 0;
+            switch(pstHdr->uiType){
+                case MSG_OPENVR_EYE_EULER_E:
+                    if (NULL == pEyeTracker) {
+                        pEyeTracker = new eyeTrackerClass();
+                        if (!vr::VRServerDriverHost()->TrackedDeviceAdded("Cymple Eye Tracker", vr::TrackedDeviceClass_Controller, pEyeTracker)) {
+                            DriverLog("Failed to add Cymple Eye Tracker!\n");
+                        }
+                    }
+                    if (NULL != pEyeTracker){
+                        pEyeTracker->updateHmdPose();
+                        tmp = pEyeTracker->update((MSG_OPENVR_EYE_EULER_S*)pData, dataLength);
+                    }
+                    else {
+                        return;
+                    }
+                    break;
+                default:
+                    tmp = dataLength;
+            }
+            pData += tmp;
+            dataLength -= tmp;
+        }
+        mutexUdpRW.unlock_shared();
+    }
 }
 void ProviderClass::EnterStandby()
 {
@@ -125,5 +155,14 @@ void ProviderClass::LeaveStandby()
 {
 
 }
-void ProviderClass::udpReadAndWrite() {
+void ProviderClass::udpReadAndWrite(){
+    while (!b_exit) {
+        mutexUdpRW.lock();
+        int tmpLength =  CSocket::selectAndRecv(udpSocket, aucRxBuffer + dataLength, RX_BUFFER_LENGTH - dataLength);
+        if (tmpLength > 0) {
+            dataLength += tmpLength;
+        }
+        mutexUdpRW.unlock();
+        Sleep(10);
+    }
 }

@@ -1,9 +1,8 @@
-﻿  provider.cpp
-E:\Project_Cymple\Cymple_SteamVR\src\provider.cpp(95,12): warning C4101: “pstHdr”: 未引用的局部变量
-    正在创建库 ..\output\cymple_release\bin\win64\driver_cymple_release.lib 和对象 ..\output\cymple_release\bin\win64\driver_cymple_release.exp
+﻿  eyeTracker.cpp
+    正在创建库 E:\steam\steamapps\common\SteamVR\drivers\cymple_release\bin\win64\driver_cymple_release.lib 和对象 E:\steam\steamapps\common\SteamVR\drivers\cymple_release\bin\win64\driver_cymple_release.exp
   正在生成代码
-  103 of 169 functions (60.9%) were compiled, the rest were copied from previous compilation.
+  2 of 191 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    8 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
-  driver_sample.vcxproj -> E:\Project_Cymple\Cymple_SteamVR\output\cymple_release\bin\win64\driver_cymple_release.dll
+  driver_sample.vcxproj -> E:\steam\steamapps\common\SteamVR\drivers\cymple_release\bin\win64\driver_cymple_release.dll

@@ -5,7 +5,8 @@
 #include <thread>
 #include <shared_mutex>
 #include <WinSock2.h>
-#define RX_BUFFER_LENGTH  4096
+#include "eyeTracker/eyeTracker.h"
+#define RX_BUFFER_LENGTH  1024
 class ProviderClass : public vr::IServerTrackedDeviceProvider
 {
 public:
@@ -19,11 +20,14 @@ public:
 	virtual vr::CVRPropertyHelpers* GetProperties() { return vr::VRProperties(); };
 
 private:
+	int dataLength = 0;
 	SOCKET udpSocket;
 	std::thread* threadUdpRW;
 	char aucRxBuffer[RX_BUFFER_LENGTH];
 	std::shared_mutex mutexUdpRW;
 	void udpReadAndWrite();
+	eyeTrackerClass* pEyeTracker = NULL;
+	bool b_exit = false;
 };
 
 #endif

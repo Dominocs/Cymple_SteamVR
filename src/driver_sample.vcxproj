@@ -83,7 +83,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\output\cymple_release\bin\win64\</OutDir>
+    <OutDir>E:\steam\steamapps\common\SteamVR\drivers\cymple_release\bin\win64\</OutDir>
     <TargetName>driver_cymple_release</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -162,21 +162,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="basic.cpp" />
+    <ClCompile Include="debugDevice\debugController.cpp" />
     <ClCompile Include="provider.cpp" />
     <ClCompile Include="driverlog.cpp" />
     <ClCompile Include="DriverFactory.cpp" />
-    <ClCompile Include="virtualDevice\hmd.cpp" />
+    <ClCompile Include="debugDevice\debugHmd.cpp" />
     <ClCompile Include="network\udp.hpp" />
-    <ClCompile Include="virtualTracker.cpp" />
+    <ClCompile Include="eyeTracker\eyeTracker.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic.h" />
+    <ClInclude Include="debugDevice\debugController.h" />
     <ClInclude Include="networkDef.h" />
     <ClInclude Include="provider.h" />
     <ClInclude Include="driverlog.h" />
-    <ClInclude Include="virtualDevice\hmd.h" />
+    <ClInclude Include="debugDevice\debugHmd.h" />
     <ClInclude Include="network\socket.hpp" />
-    <ClInclude Include="virtualTracker.h" />
+    <ClInclude Include="eyeTracker\eyeTracker.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="default.vrsettings" />
